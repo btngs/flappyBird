@@ -16,3 +16,6 @@ Game ini terinspirasi dari Flappy Bird: pemain mengendalikan burung untuk melewa
 - **Game over & restart**.
 - Animasi sederhana burung.
 - Dukungan **mobile tap** (opsional, bisa ditambahkan).
+
+## Disclaimer
+Game ini adalah project pertama saya dan masih dalam tahap pengembangan
