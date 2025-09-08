@@ -3,8 +3,8 @@ using UnityEngine.InputSystem;
 
 public class Controller : MonoBehaviour
 {
-    [SerializeField]private float velocity = 1.5f;
-    [SerializeField]private float rotationFactor = 10f;
+    [SerializeField] private float velocity = 1.5f;
+    [SerializeField] private float rotationFactor = 10f;
     private Rigidbody2D rb;
 
     private void Awake()
@@ -23,5 +23,10 @@ public class Controller : MonoBehaviour
     private void FixedUpdate()
     {
         transform.rotation = Quaternion.Euler(0, 0, rb.linearVelocity.y * rotationFactor);
+    }
+
+    private void OnCollisionEnter2D(Collision2D collision)
+    {
+        GameManager.instance.GameOver();
     }
 }

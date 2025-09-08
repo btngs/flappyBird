@@ -27,4 +27,13 @@ public class PipeSpawner : MonoBehaviour
 
         Destroy (newPipe,  5f);
     }
+
+    private void onCollisionEnter2D(Collision2D collision)
+    {
+        if (collision.gameObject.CompareTag("Player"))
+        {
+            Debug.Log("Game Over");
+            Time.timeScale = 0;
+        }
+    }
 }
