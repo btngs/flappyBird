@@ -4,7 +4,7 @@ using UnityEngine.SceneManagement;
 public class GameManager : MonoBehaviour
 {
     public static GameManager instance;
-    [SerializeField] private GameObject gameOverCanvas;
+     [SerializeField] private GameObject gameOverCanvas;
 
     private void Awake()
     {
